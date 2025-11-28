@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Ambassador Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Ambassador</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="book-btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&h=600&fit=crop') center/cover;">
+        <h1 class="typing-text">Our Services</h1>
+        <p class="fade-in-up">Discover our luxurious rooms and exquisite dining options</p>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="services-section">
+        <div class="container">
+            <!-- QR Code Section -->
+            <div class="qr-code-section">
+                <h3>Scan to Get Our Services</h3>
+                <div id="servicesQRCode"></div>
+                <p class="qr-instruction">Scan this QR code to view all our services on your mobile device</p>
+            </div>
+            
+            <h2>Luxury Rooms & Suites</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="images/standard-room.jpg" onerror="this.src='https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800'" alt="Standard Room">
+                    <div class="service-content">
+                        <span class="badge">Luxury Room</span>
+                        <h3>Standard Room</h3>
+                        <p class="price">ETB 3,500 <span>/night</span></p>
+                        <p>Comfortable and elegantly furnished room with modern amenities, perfect for business or leisure travelers.</p>
+                        <a href="booking.html" class="book-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/deluxe-room.jpg" onerror="this.src='https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800'" alt="Deluxe Room">
+                    <div class="service-content">
+                        <span class="badge">Luxury Room</span>
+                        <h3>Deluxe Room</h3>
+                        <p class="price">ETB 5,000 <span>/night</span></p>
+                        <p>Spacious room with premium furnishings, work desk, and stunning city views.</p>
+                        <a href="booking.html" class="book-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/executive-suite.jpg" onerror="this.src='https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800'" alt="Executive Suite">
+                    <div class="service-content">
+                        <span class="badge">Luxury Suite</span>
+                        <h3>Executive Suite</h3>
+                        <p class="price">ETB 8,500 <span>/night</span></p>
+                        <p>Luxurious suite with separate living area, dining space, and executive amenities.</p>
+                        <a href="booking.html" class="book-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/family-suite.jpg" onerror="this.src='https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800'" alt="Family Suite">
+                    <div class="service-content">
+                        <span class="badge">Luxury Suite</span>
+                        <h3>Family Suite</h3>
+                        <p class="price">ETB 10,000 <span>/night</span></p>
+                        <p>Perfect for families, featuring two bedrooms, living area, and kitchenette.</p>
+                        <a href="booking.html" class="book-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/presidential-suite.jpg" onerror="this.src='https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800'" alt="Presidential Suite">
+                    <div class="service-content">
+                        <span class="badge">Premium Suite</span>
+                        <h3>Presidential Suite</h3>
+                        <p class="price">ETB 15,000 <span>/night</span></p>
+                        <ul class="amenities">
+                            <li><i class="fas fa-bed"></i> 1 King Bed</li>
+                            <li><i class="fas fa-users"></i> 4 Guests</li>
+                            <li><i class="fas fa-ruler-combined"></i> 1200 sqft</li>
+                        </ul>
+                        <p>Ultimate luxury with panoramic views, private balcony, and VIP services.</p>
+                        <a href="booking.html" class="book-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/honeymoon-suite.jpg" onerror="this.src='https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800'" alt="Honeymoon Suite">
+                    <div class="service-content">
+                        <span class="badge">Romantic Suite</span>
+                        <h3>Honeymoon Suite</h3>
+                        <p class="price">ETB 12,000 <span>/night</span></p>
+                        <p>Romantic suite with jacuzzi, champagne service, and special decorations.</p>
+                        <a href="booking.html" class="book-button">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section class="dining-section">
+        <div class="container">
+            <h2>Dining & Cuisine</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="images/ethiopian-cuisine.jpg" onerror="this.src='https://images.unsplash.com/photo-1604909052743-94e838986d24?w=800'" alt="Ethiopian Cuisine">
+                    <div class="service-content">
+                        <h3>Traditional Ethiopian Cuisine</h3>
+                        <p class="price">ETB 350 - 800</p>
+                        <p>Authentic Ethiopian dishes including injera, doro wat, kitfo, and tibs. Experience the rich flavors of Ethiopia's culinary heritage.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/international-cuisine.jpg" onerror="this.src='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800'" alt="International Cuisine">
+                    <div class="service-content">
+                        <h3>International Cuisine</h3>
+                        <p class="price">ETB 400 - 1,200</p>
+                        <p>Italian pasta, American steaks, Asian stir-fry, and more. Our chefs prepare dishes from around the world.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/breakfast-buffet.jpg" onerror="this.src='https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800'" alt="Breakfast Buffet">
+                    <div class="service-content">
+                        <h3>Breakfast Buffet</h3>
+                        <p class="price">ETB 250 / person</p>
+                        <p>Start your day with our extensive breakfast buffet featuring continental and Ethiopian options, fresh fruits, and beverages.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/fine-dining.jpg" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800'" alt="Fine Dining">
+                    <div class="service-content">
+                        <h3>Fine Dining Restaurant</h3>
+                        <p class="price">ETB 800 - 2,500</p>
+                        <p>Elegant dining experience with gourmet dishes, premium wines, and impeccable service in a sophisticated atmosphere.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/coffee-lounge.jpg" onerror="this.src='https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800'" alt="Coffee Lounge">
+                    <div class="service-content">
+                        <h3>Ethiopian Coffee Lounge</h3>
+                        <p class="price">ETB 80 - 200</p>
+                        <p>Experience traditional Ethiopian coffee ceremony with freshly roasted beans and authentic preparation.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/room-service.jpg" onerror="this.src='https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800'" alt="Room Service">
+                    <div class="service-content">
+                        <h3>24/7 Room Service</h3>
+                        <p class="price">Menu Prices Apply</p>
+                        <p>Enjoy meals in the comfort of your room with our round-the-clock room service offering full menu options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ambassador Hotel</h3>
+                    <p>Bole Road, Addis Ababa, Ethiopia</p>
+                    <p>Experience luxury and comfort</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> +251 11 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@ambassador.et</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bole, Addis Ababa</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bole Ambassador Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Generate Services QR Code
+        if (document.getElementById('servicesQRCode')) {
+            new QRCode(document.getElementById('servicesQRCode'), {
+                text: window.location.href,
+                width: 200,
+                height: 200,
+                colorDark: "#1a1a1a",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.H
+            });
+        }
+    </script>
+</body>
+</html>

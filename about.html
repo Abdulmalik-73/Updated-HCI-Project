@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ambassador Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Ambassador</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="book-btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920&h=600&fit=crop') center/cover;">
+        <h1 class="typing-text">About Ambassador Hotel</h1>
+        <p class="fade-in-up">Excellence in Hospitality Since 2003</p>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-main">
+                <h2>Our Story</h2>
+                <p>Bole Ambassador Hotel has been a landmark of luxury and hospitality in Addis Ababa for over two decades. Located in the heart of Bole, Ethiopia's diplomatic and business district, we have welcomed guests from around the world with authentic Ethiopian warmth and world-class service.</p>
+                <p>Our commitment to excellence has made us the preferred choice for business travelers, diplomats, and tourists seeking an unforgettable experience in Ethiopia's vibrant capital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Slider -->
+    <section class="gallery-slider">
+        <div class="container">
+            <h2>Hotel Gallery</h2>
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1568495248636-6432b97bd949?w=600&h=400&fit=crop" alt="Luxury Hotel Lobby"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop" alt="Fine Dining Restaurant"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=600&h=400&fit=crop" alt="Swimming Pool"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&h=400&fit=crop" alt="Conference Room"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=400&fit=crop" alt="Spa & Wellness"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&h=400&fit=crop" alt="Hotel Bar"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&h=400&fit=crop" alt="Hotel Exterior"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&h=400&fit=crop" alt="Reception Desk"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=400&fit=crop" alt="Executive Suite"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="Hotel Services"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1519974719765-e6559eac2575?w=600&h=400&fit=crop" alt="Garden Area"></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=400&fit=crop" alt="Hotel Lounge"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Our Mission</h3>
+                    <p>To provide exceptional hospitality experiences that blend Ethiopian culture with international standards, creating memorable stays for every guest.</p>
+                </div>
+                <div class="mv-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Our Vision</h3>
+                    <p>To be recognized as Ethiopia's premier luxury hotel, setting the standard for excellence in hospitality and service.</p>
+                </div>
+                <div class="mv-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Our Values</h3>
+                    <p>Excellence, integrity, respect, and genuine Ethiopian hospitality guide everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Amenities -->
+    <section class="amenities-showcase">
+        <div class="container">
+            <h2>Hotel Amenities & Facilities</h2>
+            <p class="section-subtitle">Experience world-class facilities designed for your comfort and convenience</p>
+            
+            <div class="amenities-grid-showcase">
+                <div class="amenity-card" data-amenity="pool">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=600&h=400&fit=crop" alt="Swimming Pool">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('pool')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-swimming-pool amenity-icon"></i>
+                        <h3>Swimming Pool</h3>
+                        <p>Outdoor heated pool with poolside bar and lounge area</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> Heated water</li>
+                            <li><i class="fas fa-check"></i> Open 6 AM - 10 PM</li>
+                            <li><i class="fas fa-check"></i> Poolside service</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="gym">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=400&fit=crop" alt="Fitness Center">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('gym')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-dumbbell amenity-icon"></i>
+                        <h3>Fitness Center</h3>
+                        <p>State-of-the-art gym with modern equipment and personal trainers</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> 24/7 access</li>
+                            <li><i class="fas fa-check"></i> Personal trainers</li>
+                            <li><i class="fas fa-check"></i> Modern equipment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="spa">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=400&fit=crop" alt="Spa & Wellness">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('spa')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-spa amenity-icon"></i>
+                        <h3>Spa & Wellness</h3>
+                        <p>Luxurious spa with massage, sauna, and beauty treatments</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> Massage therapy</li>
+                            <li><i class="fas fa-check"></i> Sauna & steam</li>
+                            <li><i class="fas fa-check"></i> Beauty treatments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="restaurant">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop" alt="Restaurant">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('restaurant')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-utensils amenity-icon"></i>
+                        <h3>Fine Dining Restaurant</h3>
+                        <p>Multiple restaurants serving Ethiopian and international cuisine</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> 3 restaurants</li>
+                            <li><i class="fas fa-check"></i> Room service 24/7</li>
+                            <li><i class="fas fa-check"></i> Bar & lounge</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="conference">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&h=400&fit=crop" alt="Conference Rooms">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('conference')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-users amenity-icon"></i>
+                        <h3>Conference & Events</h3>
+                        <p>Modern meeting rooms and event spaces with AV equipment</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> 5 meeting rooms</li>
+                            <li><i class="fas fa-check"></i> AV equipment</li>
+                            <li><i class="fas fa-check"></i> Catering service</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="business">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop" alt="Business Center">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('business')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-briefcase amenity-icon"></i>
+                        <h3>Business Center</h3>
+                        <p>Fully equipped business center with printing and secretarial services</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> Computers & printers</li>
+                            <li><i class="fas fa-check"></i> High-speed WiFi</li>
+                            <li><i class="fas fa-check"></i> Secretarial services</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="parking">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=600&h=400&fit=crop" alt="Parking">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('parking')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-car amenity-icon"></i>
+                        <h3>Free Parking</h3>
+                        <p>Secure parking facility with 24/7 security and valet service</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> 200+ spaces</li>
+                            <li><i class="fas fa-check"></i> Valet service</li>
+                            <li><i class="fas fa-check"></i> 24/7 security</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="wifi">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&h=400&fit=crop" alt="WiFi">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('wifi')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-wifi amenity-icon"></i>
+                        <h3>High-Speed WiFi</h3>
+                        <p>Complimentary high-speed internet throughout the hotel</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> Free WiFi</li>
+                            <li><i class="fas fa-check"></i> High-speed connection</li>
+                            <li><i class="fas fa-check"></i> All areas covered</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="concierge">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&h=400&fit=crop" alt="Concierge">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('concierge')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-concierge-bell amenity-icon"></i>
+                        <h3>Concierge Service</h3>
+                        <p>24/7 concierge to assist with all your needs and requests</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> 24/7 available</li>
+                            <li><i class="fas fa-check"></i> Tour bookings</li>
+                            <li><i class="fas fa-check"></i> Transportation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="shuttle">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=400&fit=crop" alt="Airport Shuttle">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('shuttle')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-shuttle-van amenity-icon"></i>
+                        <h3>Airport Shuttle</h3>
+                        <p>Complimentary airport transfer service for all guests</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> Free shuttle</li>
+                            <li><i class="fas fa-check"></i> 24/7 service</li>
+                            <li><i class="fas fa-check"></i> Luxury vehicles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="laundry">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=600&h=400&fit=crop" alt="Laundry Service">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('laundry')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-tshirt amenity-icon"></i>
+                        <h3>Laundry & Dry Cleaning</h3>
+                        <p>Professional laundry and dry cleaning services</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> Same-day service</li>
+                            <li><i class="fas fa-check"></i> Dry cleaning</li>
+                            <li><i class="fas fa-check"></i> Ironing service</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenity-card" data-amenity="security">
+                    <div class="amenity-image">
+                        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=600&h=400&fit=crop" alt="Security">
+                        <div class="amenity-overlay">
+                            <button class="view-details-btn" onclick="openAmenityModal('security')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="amenity-content">
+                        <i class="fas fa-shield-alt amenity-icon"></i>
+                        <h3>24/7 Security</h3>
+                        <p>Round-the-clock security with CCTV and trained personnel</p>
+                        <ul class="amenity-features">
+                            <li><i class="fas fa-check"></i> 24/7 monitoring</li>
+                            <li><i class="fas fa-check"></i> CCTV cameras</li>
+                            <li><i class="fas fa-check"></i> Secure access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenity Modal -->
+    <div id="amenityModal" class="amenity-modal">
+        <div class="amenity-modal-content">
+            <span class="amenity-close" onclick="closeAmenityModal()">&times;</span>
+            <div id="amenityModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ambassador Hotel</h3>
+                    <p>Bole Road, Addis Ababa, Ethiopia</p>
+                    <p>Experience luxury and comfort</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> +251 11 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@ambassador.et</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bole, Addis Ababa</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="@Abdulmalik_nure"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bole Ambassador Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
